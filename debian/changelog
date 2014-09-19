@@ -1,0 +1,5 @@
+galera (25.3.5-1) calibre8; urgency=medium
+
+  * First deb release.
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Fri, 19 Sep 2014 11:12:49 +0200
