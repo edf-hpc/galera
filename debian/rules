@@ -32,9 +32,9 @@ override_dh_auto_clean:
 override_dh_installdocs:
 	dh_installdocs
 
-# Start earlier than MySQL which has value 19
+# The garb daemon is not needed with MariaDB Galera
 override_dh_installinit-arch:
-	dh_installinit --name=garb -- defaults 18 22
+	dh_installinit --name=garb --no-start --noscripts
 
 override_dh_strip:
 	dh_strip --dbg-package=galera-dbg
